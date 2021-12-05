@@ -1,0 +1,1 @@
+// Given an array of string count the overall total number of characters

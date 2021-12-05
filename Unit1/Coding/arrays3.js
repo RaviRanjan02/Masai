@@ -1,0 +1,1 @@
+// Given an array of numbers find the average of all the even numbers

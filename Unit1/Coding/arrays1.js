@@ -1,0 +1,1 @@
+// Given an array print the position (starting with 1) and the element in a single line
