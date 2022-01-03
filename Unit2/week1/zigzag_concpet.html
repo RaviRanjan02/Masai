@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zig Zag</title>
+    <style>
+        .main{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 80%;
+        }
+        .top{
+            display: flex;
+        }
+        .top>#box{
+            width:400px;
+            height: 200px;
+            background-color: teal;
+            margin: 10px;
+        }
+        .middle{
+            display: flex;
+        }
+        .middle>#box{
+            width:400px;
+            height: 200px;
+            background-color: teal;
+            margin: 10px;
+        }
+        
+        .bottom{
+            display: flex;
+        }
+        .bottom>#box{
+            width:400px;
+            height: 200px;
+            background-color: teal;
+            margin: 10px;
+        }
+        .top>#box:nth-child(2){
+            flex: 80%;
+        }
+        .middle>#box:nth-child(1){
+            flex: 80%;
+        }
+        .bottom>#box:nth-child(3){
+            flex: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="top">
+        <div id="box">a</div>
+        <div id="box">b</div>
+        <div id="box">c</div>
+    </div>
+    <div class="middle">
+        <div id="box">d</div>
+        <div id="box">e</div>
+        <div id="box">f</div>
+    </div>
+    <div class="bottom">
+        <div id="box">g</div>
+        <div id="box">h</div>
+        <div id="box">j</div>
+    </div>
+</div>
+</body>
+</html>
