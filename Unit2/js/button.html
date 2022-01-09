@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button layout</title>
+    <style>
+     div{
+         display: flex;
+         width: 50%;
+         margin: 300px auto;
+
+     }
+     div>button{
+         margin: 5px;
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         color: #ffffff;
+         font-size: 20px;
+     }
+     div>button:hover{
+         font-size: 22px;
+     }
+     button:nth-child(1){
+         background-color:#0D6EFD ;
+         
+     }
+     button:nth-child(2){
+         background-color:#6C757D ;
+         
+     }button:nth-child(3){
+         background-color:#198754 ;
+         
+     }button:nth-child(4){
+         background-color:#DC3545 ;
+         
+     }button:nth-child(5){
+         background-color:#FFC008 ;
+         color: #000000;
+         
+     }button:nth-child(6){
+         background-color:#11CAF0 ;
+         color: #000000;
+         
+     }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+<script>
+    var box=document.querySelector("div")
+    var btn1=document.createElement("button")
+    var btn2=document.createElement("button")
+    var btn3=document.createElement("button")
+    var btn4=document.createElement("button")
+    var btn5=document.createElement("button")
+    var btn6=document.createElement("button")
+
+
+    btn1.textContent="Primary"
+    btn2.textContent="Secondary"
+    btn3.textContent="Sucess"
+    btn4.textContent="Danger"
+    btn5.textContent="Warning"
+    btn6.textContent="Info"
+
+    box.append(btn1,btn2,btn3,btn4,btn5,btn6)
+</script>
+</html>
