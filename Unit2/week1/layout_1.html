@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main{
+        color: whitesmoke;
+        text-transform: uppercase;
+        width: 70%;
+        height: 500px;
+        margin: 50px auto;
+        padding: 10px;  
+           /* Grid Properties */
+             display: grid;
+             grid-template-columns: repeat(3,1fr) 220px;
+             grid-template-rows: 60px repeat(3,1fr);
+             grid-gap: 10px;
+    }
+    .nav{
+        background-color: rgb(180, 180, 7);
+        grid-column: 1/-1;
+
+    }
+    .left{
+        background-color: red;
+        grid-column: 1/4;
+        grid-row: 2/5;
+    }
+    .right{
+        background-color: rgb(38, 255, 19);
+    }
+
+    @media (max-width:600px){
+       #main{
+             display: grid;
+             grid-template-columns: 1fr;
+             grid-template-rows: 40px ;
+             grid-gap: 10px;
+             background-color: teal;
+        }
+        .nav{
+            background-color: rgb(180, 180, 7);
+            grid-column: 1/-1;
+
+        }
+        .left{
+            background-color: red;
+            grid-column: 1/-1;
+            grid-row: 2/4;
+        }
+        .right{
+            background-color: rgb(38, 255, 19);
+        }
+    }
+
+    @media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+       #main{
+             display: grid;
+             grid-template-columns: repeat(3,1fr);
+             grid-template-rows: 30px repeat(3,1r)
+             
+             
+            }
+        .nav{
+            background-color: rgb(180, 180, 7);
+            grid-column: 1/-1;
+
+        }
+        .left{
+            background-color: red;
+            grid-row: 2/4;
+          
+         
+        }
+        .right{
+            background-color: rgb(38, 255, 19);
+        }
+    }
+
+
+    
+</style>
+
+
+</head>
+<body> 
+  <div id="main">
+      <div class="nav">Navigation</div>
+      <div class="left">Left box</div>
+      <div class="right">right box 1</div>
+      <div class="right">right box 2</div>
+      <div class="right">right box 3</div>
+</div>
+    
+</body>
+</html>
