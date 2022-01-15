@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> aplha Zig Zag using grid</title>
+    <style>
+     #container{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-template-rows: repeat(3,100px);
+         grid-gap:30px;
+         
+     }
+     #container>div{
+         background-color: rgb(41, 40, 40);
+         border-radius: 10px;
+     }
+     #first{
+         grid-area: 1/1/2/3;   
+     }
+     #second{
+         grid-area: 1/3/2/5;
+         
+     }
+     #third{
+         grid-area: 2/1/3/2;
+         
+     }
+     #fourth{
+         grid-area: 2/2/3/5;
+         
+     }
+     #fifth{
+         grid-area: 3/1/4/5;
+    }
+    </style>
+</head>
+<body>
+    <div id="container"> 
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+        <div id="fourth"></div>
+        <div id="fifth"></div>
+</div>
+</body>
+</html>
