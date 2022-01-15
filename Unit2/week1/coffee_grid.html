@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid coffee </title>
+    <style>
+    .main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,200px);
+        grid-gap:10px;
+        background-color: rgb(143, 230, 241);
+        padding: 10px;
+    }
+    .main>div{
+        background-color: white;
+        display: grid;
+
+    }
+    #details{
+        color: grey;
+    }
+    .price{
+        
+        width: 25%;
+        text-align: right;
+        padding: 5px;
+        color: rgb(243, 178, 56);
+        
+    }
+    .name{
+        
+        display: flex;
+        
+        justify-content: space-between;
+        font-weight: 800;
+        padding-left: 10px;
+    }
+    #box{
+        padding: 10px;
+    }
+    @media only screen and (min-width:0px) and (max-width:320px) {
+        .main{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(9,200px);
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:600px) {
+        .main{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 200px,200px,200px 200px,200px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+     <div>
+        <div id="box">
+            <div class="name"><p>Cappuccino</p>
+                <div class="price"><p>$49</p></div>
+            </div>
+            
+            <p id="details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Nostrum ipsam, fugit 
+                nam illum odit officiis illo pariatur 
+                nobis rem veniam.</p>
+        </div>
+     </div>
+    </div>
+</body>
+</html>
