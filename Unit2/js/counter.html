@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter create</title>
+</head>
+<body>
+    <h1></h1>
+    <button id="dec">Decrement</button>
+    <button id="inc">Increment</button>
+</body>
+</html>
+
+
+<script>
+
+
+document.querySelector("#dec").addEventListener("click",decfun)
+var counter=0;
+document.querySelector("h1").textContent=counter
+function decfun(){
+    counter--
+    localStorage.setItem("countervalue",counter);
+    document.querySelector("h1").textContent=counter
+}
+
+function incfun(){
+    counter++
+    localStorage.setItem("countervalue",counter);
+    document.querySelector("h1").textContent=counter
+}
+
+document.querySelector("#inc").addEventListener("click",incfun)
+
+
+</script>
