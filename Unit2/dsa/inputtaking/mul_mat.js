@@ -7,15 +7,9 @@ function runProgram(input) {
     for(var i=1;i<newInput.length;i+=5){
         arr1.push(newInput[i+1].trim().split(" ").map(Number));
         // arr2.push(newInput[i+4].trim().split(" ").map(Number));
-        
-   
     }
     console.log(arr1,arr2);
-
-   
-   
-   
-   }
+ }
    if (process.env.USERNAME === "Ravi") {
        runProgram(` 2
        3
