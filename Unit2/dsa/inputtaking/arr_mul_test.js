@@ -10,7 +10,6 @@ function runProgram(input) {
     var newInput=input.trim().split("\n");
     var test= +newInput[0];
     // console.log(test);
-    
     for(var i=1;i<newInput.length;i+=2){
         var [len,k] = newInput[i].trim().split(" ").map(Number)
         // console.log(len,k);
@@ -20,11 +19,7 @@ function runProgram(input) {
         // console.log(arr1);
         increaseByK(arr1,k)
     }
-
-   
-   
-   
-   }
+}
    if (process.env.USERNAME === "Ravi") {
        runProgram(` 2
        3 2
