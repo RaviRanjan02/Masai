@@ -8,11 +8,7 @@ function runProgram(input) {
         var str= newInput[i+1].trim().split(" ");
         console.log(str);
     }
-    
-   
-   
-   
-   }
+}
    if (process.env.USERNAME === "Ravi") {
        runProgram(` 2
        4
