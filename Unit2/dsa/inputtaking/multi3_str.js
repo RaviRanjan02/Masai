@@ -7,11 +7,7 @@ function runProgram(input) {
         var str= newInput[i].trim();
         console.log(str);
     }
-    
-   
-   
-   
-   }
+}
    if (process.env.USERNAME === "Ravi") {
        runProgram(` 2
        my name is ankush
