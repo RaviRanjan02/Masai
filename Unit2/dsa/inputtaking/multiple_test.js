@@ -8,9 +8,6 @@ function runProgram(input) {
      var arr=newInput[i+1].trim().split(" ").map(Number);
      console.log(arr);
  }
-
-
-
 }
 if (process.env.USERNAME === "Ravi") {
     runProgram(` 2
