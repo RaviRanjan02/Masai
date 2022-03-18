@@ -17,6 +17,47 @@ for(var i=0;i<row;i++){
 }
 console.log(bag);
 
+for(var i=0;i<row;i++){
+    for(var j=0;j<cols;j++){
+        if(items[i]==items[j]){
+            console.log(items[i][j]);
+        }
+      }
+    }
+
+
+    for(var i=row-1;i>=0;i--){
+        for(var j=cols-1;j>=0;j--){
+            if(items[j]==items[i]){
+                console.log(items[i][j]);
+            }
+          }
+        }
+    
+        for(var i=0;i<row;i++){
+            for(var j=cols-1;j>=0;j--){
+                if(items[j]==items[i]){
+                    console.log(items[j][i]);
+                }
+              }
+            }  
+            
+            
+            for(var i=row-1;i>=0;i--){
+                for(var j=0;j<cols;j++){
+                    if(items[j]==items[i]){
+                        console.log(items[i][j]);
+                    }
+                  }
+                }
+
+                for(var i=row-1;i>=0;i--){
+                    for(var j=0;j<cols;j++){
+                        if(items[j]==items[i]){
+                            console.log(items[i][j]);
+                        }
+                      }
+                    }
 
 
 
