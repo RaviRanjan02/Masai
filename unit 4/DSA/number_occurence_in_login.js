@@ -1,22 +1,73 @@
-
-
-
-
-
-
-
-function runProgram(input){
-    var newInput=input.trim().split("\n");
-    console.log(newInput);
-    for(var i=1;i<newInput.length;i++){
-        var arr=newInput[i].trim().split(" ").map(Number);
-        console.log(arr);
+function higherBound(n, k, arr) {
+  var low = 0;
+  var high = n - 1;
+  var ans = -1;
+  while (low <= high) {
+    mid = low + Math.floor((high - low)/ 2);
+    if (arr[mid] ==k){
+        ans = mid
+      low = mid + 1;
     }
-    
+    else if(arr[mid]>k) {
+        high = mid -1;
+    }
+    else {
+        low = mid +1
+    }
+    }  
+    return ans
+ 
+  
+};
+function  lowerBound (n, k, arr) {
+  var low = 0;
+  var high = n - 1;
+  var ans = -1;
+  while (low <= high) {
+    mid = low + Math.floor((high - low) / 2);
+    if (arr[mid] == k) {
+        ans = mid
+high = mid -1;
+    }
+     else if(arr[mid] >k)
+     {
+      high = mid -1;
+    }
+    else {
+        low = mid + 1;
+    }
+  }
+  
+  return ans
+  
+};
+
+
+function Occurence (n,k,arr){
+  lowerbound = lowerBound(n,k , arr)
+  upperbound = higherBound(n,k, arr)
+  // console.log(lowerbound);
+  // console.log(upperbound);
+  if (lowerbound == -1) {
+      return 0
+  }
+     
+  var  res = upperbound - lowerbound + 1
+  return res
+}
+
+function runProgram(input) {
+  var newInput = input.trim().split("\n");
+  var num = newInput[0].trim().split(" ").map(Number);
+  var arr = newInput[1].trim().split(" ").map(Number);
+
+  var n = +num[0];
+  var k = +num[1];
+
+  console.log(Occurence(n, k, arr));
 }
 
 
- 
 
 if (process.env.USERNAME === "Ravi") {
   runProgram(`6 3
