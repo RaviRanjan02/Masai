@@ -1,30 +1,26 @@
 function  lowerBound (n, k, arr) {
-  var low = 0;
-  var high = n -1;
-  var ans = -1;
-  while (low <high) {
-    mid = low + Math.floor((high - low) / 2);
-    if (arr[mid] == k) {
-        ans = mid
-        high = mid -1;
+   var low=0;
+  //  console.log(arr);
+    var high=arr.length-1;
+    var ans=-1;
+    while(low<=high){
+        
+       var mid= low+Math.floor((high-low)/2);
+       if(arr[mid]===k){
+         ans=mid;
+         high=mid-1;
+       }
+       else if(arr[mid]>k){
+        high=mid-1;
+       }
+       else{
+        low=mid+1;
+       }
+            
     }
-     else if(arr[mid] >k)
-     {
-      high = mid -1;
-    }
-    else {
-        low = mid + 1;
-    }
-  }
-  
-  return ans
+    return ans 
   
 };
-
-
-
-
-
 
 
 function runProgram(input){
@@ -37,6 +33,7 @@ function runProgram(input){
     
     var n= +num[0];
     var k= +num[1];
+    // console.log(n,k);
     console.log(lowerBound(n,k,arr));
 }
 
@@ -44,8 +41,8 @@ function runProgram(input){
  
 
 if (process.env.USERNAME === "Ravi") {
-  runProgram(`6 3
-  2 3 3 3 6 9`);
+  runProgram(`10 10
+  0 2 4 4 5 5 7 7 9 10`);
 } else {
   process.stdin.resume();
   process.stdin.setEncoding("ascii");
