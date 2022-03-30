@@ -1,30 +1,18 @@
 function binaryRecursive(len,k,arr){
-    var start=0;
-    var end =arr.length-1;
-    var ans=-1;
-    while(start>end){
-        
-        if(start>end){
-            return -1;
-        }
-        var mid =start+Math.floor((end-start)/2)
-        if(k==arr[i]){
-            return mid
-        }
-        else if(k<arr[i]){
-            return (binaryRecursive(arr,start,mid-1,k))
-        }
-        else{
-            return (binaryRecursive(arr,mid+1,end,k))
-        }
-            
+    var low=0;
+    var high=arr.length-1;
+    var elem=0;
+    if(high>=low){
+      var mid =low+Math.floor((high-low)/2);
     }
+    if(arr[mid]==elem){
+      return mid
+    }
+    if(arr[mid]>elem){
+      return binaryRecursive(low,elem,arr,mid-1)
+    }
+    return binaryRecursive(high,elem,arr,mid+1)
 }
-
-
-
-
-
 
 
 function runProgram(input){
