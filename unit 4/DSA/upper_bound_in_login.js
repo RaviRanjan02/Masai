@@ -1,29 +1,21 @@
 function higherBound(n, k, arr) {
   var low = 0;
-  var high = n - 1;
-  var ans = -1;
-  while (low <= high) {
-    mid = low + Math.floor((high - low) / 2);
-    if (arr[mid] ==k){
-        ans = mid
-      low = mid + 1;
-    }
-    else if(arr[mid]>k) {
-        high = mid -1;
+  var high=n;
+  var ans =-1;
+  while (low<=high) {
+    var mid =low+Math.floor((high-low)/2);
+    if (arr[mid]<=k){
+      low=mid+1;
     }
     else {
-        low = mid +1
+        ans=mid
+        high=mid-1
     }
     }  
     return ans
  
   
 };
-
-
-
-
-
 
 function runProgram(input){
   var newInput=input.trim().split("\n");
@@ -32,7 +24,6 @@ function runProgram(input){
   // console.log(num);
   var arr=newInput[1].trim().split(" ").map(Number)
   // console.log(arr);
-  
   var n= +num[0];
   var k= +num[1];
   console.log(higherBound(n,k,arr));
